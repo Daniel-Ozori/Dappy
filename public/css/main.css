@@ -1,0 +1,16 @@
+.grid-main{
+	grid-template-columns: repeat(8, minmax(20px, 125px));
+}
+
+html,body{
+	overflow-x: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+#private_key{
+	
+	transition: background-color 1s;
+}
+
+
