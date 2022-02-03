@@ -1699,7 +1699,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": "^7.3|^8.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "^0.6.3",
