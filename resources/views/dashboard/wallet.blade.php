@@ -201,7 +201,7 @@
 		 });
 		$('#private_key').bind('click', function (event) {
 			if(!($('#private_key')[0].style.backgroundColor == "black")){
-				copyTextToClipboard($('#private_key')[0].innerHTML,event);	
+				copyTextToClipboard($('#private_key')[0],event);	
 		 	}else{
 		 		$('#private_key')[0].style.backgroundColor = "white";
 		 	}
@@ -221,12 +221,13 @@
 		        op -= op * 0.1;
 		    }, 100);
 		}
+		
 		function copyTextToClipboard(text,event) {
 			if (!navigator.clipboard) {
-				fallbackCopyTextToClipboard(text);
+				text.select();
 				return;
 			}
-			navigator.clipboard.writeText(text).then(function() {
+			navigator.clipboard.writeText(text.innerHTML).then(function() {
 				$('#copied').css('left',event.pageX);      // <<< use pageX and pageY
 		 		$('#copied').css('top',event.pageY);
 		 		$('#copied').css('display','inline');     
