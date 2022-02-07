@@ -24,11 +24,11 @@
 					</a>
 					<a href="wallet" class="bg-[url(../images/wallet.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="notifications" class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="notifications" class="bg-[url(../images/notification_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
 					<a href="trends" class="bg-[url(../images/trend.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="settings" class="bg-[url(../images/settings_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="settings" class="bg-[url(../images/settings.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
 				</div>
 				<div class="h-24">
@@ -45,11 +45,11 @@
 					</a>
 					<a href="wallet" class="bg-[url(../images/wallet.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="notifications" class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="notifications" class="bg-[url(../images/notification_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
 					<a href="trends" class="bg-[url(../images/trend.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="settings" class="bg-[url(../images/settings_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="settings" class="bg-[url(../images/settings.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
 				</div>
 				
@@ -57,7 +57,7 @@
 		<div class="w-full mt-[45px] lg:mt-0  ">
 			<section class="grid justify-center gap-5 grid-main w-full px-5 md:px-10">
 				<div class="col-span-8 flex inline-flex h-24 items-center justify-between">
-					<div class="font-bold text-2xl">Settings</div>
+					<div class="font-bold text-2xl">Notifications</div>
 					<div class="grid grid-flow-col gap-4">
 						<div class="bg-gray-200 rounded-full flex justify-center p-2 h-8 w-8">
 							<div class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-full w-full">
@@ -84,33 +84,14 @@
 			
 			
 
-			<section class="grid justify-center my-10 gap-6 grid-main w-full px-5 md:px-10">
-				
-				<div class="col-span-1 h-fit">
-					<div class="bg-[#FAFCFF]  p-2 ">
-						Account
+			<section class="grid justify-center my-10 gap-5 grid-main w-full px-5 md:px-10">
+				<div class="col-span-2 text-lg font-bold">
+					
 					</div>
-					<div class=" p-2">
-						Password
+				<div class="col-span-8 p-10 bg-[#FAFCFF] rounded-2xl h-[400px]">
+					<div class="w-full flex items-center justify-center bg-[#FAFCFF] rounded-2xl h-[400px]">
+						<div class="text-gray-300">No notifications yet</div>
 					</div>
-					<div class="p-2">
-						Appearance
-					</div>
-					<div class=" p-2">
-						Notifications
-					</div>
-				</div>
-				<div class="col-span-6 p-10 bg-[#FAFCFF] rounded-2xl h-[400px]">
-					<form action="/dashboard/settings" method="post" class="flex flex-col w-fit h-full">
-
-						
-						@csrf 
-						<button class="bg-red-500 mt-s rounded-lg text-white h-10 mt-5 py-2 px-10 flex items-center justify-center" type="submit">Delete account</button>
-
-
-
-
-					</form>
 				</div>
 			</section>
 			

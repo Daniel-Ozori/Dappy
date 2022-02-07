@@ -13,4 +13,6 @@ html,body{
 	transition: background-color 1s;
 }
 
-
+#copied{
+	opacity: 0;
+}

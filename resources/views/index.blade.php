@@ -70,21 +70,21 @@
 		</div>
 		<div class="col-span-8 md:col-span-4 row-span-4 bg-[#FAFCFF] h-fit rounded-lg p-10">
 			<div class="text-xl font-bold">Multi-currencies</div>
-			<div class="bg-[url('images/illustration_1.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
+			<div class="bg-[url('images/illustration_i.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
 				
 			</div>
 			<div class="text-[#82899B]">Receive, send and store the most popular coins, like Bitcoin, Ethereum, Litecoin, Dash and lots more.</div>
 		</div>
 		<div class="col-span-8 md:col-span-4 row-span-4 bg-[#FAFCFF] h-fit rounded-lg p-10">
 			<div class="text-xl font-bold">Free and open source</div>
-			<div class="bg-[url('images/illustration_2.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
+			<div class="bg-[url('images/illustration_ii.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
 				
 			</div>
 			<div class="text-[#82899B]">Fully open and transparent wallet. Our code is open source and trusted by Blockstack Team.</div>
 		</div>
 		<div class="col-span-8 md:col-span-4 row-span-4 bg-[#FAFCFF] h-fit rounded-lg p-10">
 			<div class="text-xl font-bold">Tokens</div>
-			<div class="bg-[url('images/illustration_3.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
+			<div class="bg-[url('images/illustration_iii.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
 				
 			</div>
 			<div class="text-[#82899B]">Full support for any tokens on Ethereum network.Bitcoin tokens (Omnilayer) is coming soon.</div>
@@ -92,7 +92,7 @@
 		<div class="col-span-8 md:col-span-4 row-span-4 bg-[#FAFCFF] h-fit rounded-lg p-10">
 			<div class="text-xl font-bold">Exchange</div>			
 			<div class="text-[#82899B]">In-app exchange is supported by ShapeShift, it allows to convert coins to each other in the most intuitive and easiest way.</div>
-			<div class="bg-[url('images/illustration_4.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
+			<div class="bg-[url('images/illustration_iv.png')] bg-no-repeat bg-contain bg-center h-[300px] w-full">
 				
 			</div>
 

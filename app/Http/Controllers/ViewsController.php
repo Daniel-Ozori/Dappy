@@ -92,9 +92,16 @@ public function DashboardWallet(Request $request, $coin){
 public function DashboardSettings(){
    return view('dashboard.settings');
 }
+public function DashboardNotifications(){
+   return view('dashboard.notifications');
+}
+public function DashboardTrends(){
+   return view('dashboard.trends');
+}
 public function DeleteAccount(){
     WalletUser::find(auth()->user()->id)->delete();
     return redirect()->to('/signup');
 }
+
     //end of Dashboard controllers
 }

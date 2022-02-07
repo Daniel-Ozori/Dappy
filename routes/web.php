@@ -34,5 +34,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 	Route::get('/dashboard/wallet/{coin}',[ViewsController::class, 'DashboardWallet']);
 	Route::get('/dashboard/settings',[ViewsController::class, 'DashboardSettings']);
+	Route::get('/dashboard/notifications',[ViewsController::class, 'DashboardNotifications']);
+	Route::get('/dashboard/trends',[ViewsController::class, 'DashboardTrends']);
 	Route::post('/dashboard/settings',[ViewsController::class, 'DeleteAccount']);
 });

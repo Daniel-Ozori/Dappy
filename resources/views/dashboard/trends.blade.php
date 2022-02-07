@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="icon"  href="../images/icon.png">
+	<script src="../../javascript/apexcharts/apexcharts.min.js"></script>
 </head>
 <body class=" min-w-full min-h-full " style="font-family: 'Montserrat', sans-serif;">
 	<div class="flex flex-row">
@@ -26,9 +28,9 @@
 					</a>
 					<a href="notifications" class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="trends" class="bg-[url(../images/trend.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="trends" class="bg-[url(../images/trend_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="settings" class="bg-[url(../images/settings_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="settings" class="bg-[url(../images/settings.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
 				</div>
 				<div class="h-24">
@@ -47,17 +49,18 @@
 					</a>
 					<a href="notifications" class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="trends" class="bg-[url(../images/trend.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="trends" class="bg-[url(../images/trend_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
 					</a>
-					<a href="settings" class="bg-[url(../images/settings_active.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					<a href="settings" class="bg-[url(../images/settings.png)]  bg-no-repeat bg-contain bg-center h-5 w-5">
+					</a>
 					</a>
 				</div>
 				
 			</div>
-		<div class="w-full mt-[45px] lg:mt-0  ">
+			<div class="w-full mt-[45px] lg:mt-0  ">
 			<section class="grid justify-center gap-5 grid-main w-full px-5 md:px-10">
 				<div class="col-span-8 flex inline-flex h-24 items-center justify-between">
-					<div class="font-bold text-2xl">Settings</div>
+					<div class="font-bold text-2xl">Trends</div>
 					<div class="grid grid-flow-col gap-4">
 						<div class="bg-gray-200 rounded-full flex justify-center p-2 h-8 w-8">
 							<div class="bg-[url(../images/notification.png)]  bg-no-repeat bg-contain bg-center h-full w-full">
@@ -81,42 +84,50 @@
 				
 				
 			</section>
-			
+		<div class="w-full mt-[45px] lg:mt-0  ">
 			
 
-			<section class="grid justify-center my-10 gap-6 grid-main w-full px-5 md:px-10">
+			<section class="grid justify-center my-10 gap-5 grid-main w-full px-5 md:px-10">
+				<div class="col-span-8 text-xl font-bold">
+					Market overview
+				</div>
 				
-				<div class="col-span-1 h-fit">
-					<div class="bg-[#FAFCFF]  p-2 ">
-						Account
+				<div class="col-span-8 bg-[#FAFCFF] rounded-2xl h-[400px]">
+					<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container">
+						<div class="tradingview-widget-container__widget" style="font-family: 'Montserrat', sans-serif;"></div>
+						<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+							{
+								"width": "100%",
+								"height": "100%",
+								"defaultColumn": "overview",
+								"screener_type": "crypto_mkt",
+								"displayCurrency": "USD",
+								"colorTheme": "light",
+								"locale": "en"
+							}
+						</script>
 					</div>
-					<div class=" p-2">
-						Password
-					</div>
-					<div class="p-2">
-						Appearance
-					</div>
-					<div class=" p-2">
-						Notifications
-					</div>
+					<!-- TradingView Widget END -->
 				</div>
-				<div class="col-span-6 p-10 bg-[#FAFCFF] rounded-2xl h-[400px]">
-					<form action="/dashboard/settings" method="post" class="flex flex-col w-fit h-full">
-
-						
-						@csrf 
-						<button class="bg-red-500 mt-s rounded-lg text-white h-10 mt-5 py-2 px-10 flex items-center justify-center" type="submit">Delete account</button>
-
-
-
-
-					</form>
+				<div class="col-span-8 h-[400px]">
+					<div style="height:560px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div>
 				</div>
+				
 			</section>
 			
 			
 		</div>
 	</div>
+	<script>
+  (function(b,i,t,C,O,I,N) {
+    window.addEventListener('load',function() {
+      if(b.getElementById(C))return;
+      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+    },false)
+  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+</script>
 	
 	
 	
