@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use Illuminate\Auth\Authenticatable;
@@ -19,3 +18,4 @@ class WalletUserMain extends Model implements
 {
     use Authenticatable, Authorizable, CanResetPassword, MustVerifyEmail;
 }
+
