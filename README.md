@@ -10,4 +10,5 @@ The features contained in Dappy are:<br/>
     3. Charts for monitoring price changes. 
     4. Wallet address to QR code convertion. 
     5. Coin price to USD conversion.
-    
+<br/>
+If you feel interested to check it out live please go here - http://pingu-dappy.herokuapp.com
